@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Dream CRP</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    background: #020617;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #111827;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+    color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Dream CRP</h2>
+    <nav>
+        <a href="index.html">Login</a>
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Subject">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <p>Email: contact@dreamcrp.com</p>
+        <p>Phone: +91 00000 00000</p>
+        <p>Dream CRP Intern Works Company</p>
+    </div>
+</div>
+
+<footer>
+© 2026 Dream CRP | All Rights Reserved
+</footer>
+
+</body>
+</html>
