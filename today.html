@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream CRP - Login</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    background: #111827;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.home {
+    display: none;
+}
+
+.company {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="loginBox">
+    <h2>Dream CRP Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<div class="container home" id="homeBox">
+    <div class="company">Dream CRP</div>
+    <div class="subtitle">Intern Works Dashboard</div>
+    <p>Welcome to the company portal.</p>
+</div>
+
+<script>
+function login() {
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+
+    // Simple demo login
+    if(user === "admin" && pass === "1234") {
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("homeBox").style.display = "block";
+    } else {
+        alert("Invalid login");
+    }
+}
+</script>
+
+</body>
+</html>
